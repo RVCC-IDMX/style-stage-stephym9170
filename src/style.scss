@@ -10,6 +10,9 @@ body {
 p, li {
     max-width: 45ch;
 }
+li { 
+color: #ccc
+}
 
 p {
     padding-block: 0.5em;
@@ -67,9 +70,14 @@ h3, h4 {
 
 /* Skip Link */
 .skip-link {
+position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
   padding: 1.5em;
- background-color: #a1b5bb;
-  color: rgb(12, 12, 12);
+ background-color: #b9b5ae;
+  color: #000;
+  opacity: 0;
 }
 .skip-link:focus {
   left: 50%;

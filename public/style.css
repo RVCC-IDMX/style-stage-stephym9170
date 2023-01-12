@@ -13,6 +13,11 @@ p, li {
   max-width: 45ch;
 }
 
+li{
+  color:#000;
+  line-height: 1.3rem;
+  padding: .5em;
+}
 p {
   padding-block: 0.5em;
 }
@@ -31,7 +36,7 @@ svg {
 /* Colors */
 body {
   color: rgb(26, 25, 25);
-  background: #a1b5bb;
+  background: #b9b5ae;
 }
 
 /*Typography*/
@@ -65,8 +70,13 @@ h3, h4 {
 
 /* Skip Link */
 .skip-link {
-  background-color: #a1b5bb;
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: #b9b5ae;
   color: #000;
+  opacity: 0;
   
 }
 
