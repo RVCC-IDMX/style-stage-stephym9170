@@ -1,0 +1,77 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+/* functions */
+/* Fonts */
+/* main */
+/*Spacing*/
+body {
+  padding: 0 1em;
+  max-width: 60rem;
+}
+
+p, li {
+  max-width: 45ch;
+}
+
+p {
+  padding-block: 0.5em;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  gap: 1.5em;
+}
+
+/* Images */
+svg {
+  max-width: 1rem;
+}
+
+/* Colors */
+body {
+  color: rgb(26, 25, 25);
+  background: #a1b5bb;
+}
+
+/*Typography*/
+body {
+  font-family: Poppins;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: clamp(3rem, 1rem + 13vw, 10rem);
+  line-height: 0.9em;
+  letter-spacing: -0.3rem;
+  margin: 0;
+  padding-block-start: 3rem;
+}
+
+h2, h3, h4 {
+  font-family: Poppins;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 1rem + 5vw, 2.7rem);
+  max-width: 50rem;
+}
+
+h3, h4 {
+  font-size: 2rem;
+}
+
+/* Skip Link */
+.skip-link {
+  background-color: #a1b5bb;
+  color: #000;
+  
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}

@@ -1,0 +1,78 @@
+/* main */
+@use "./abstracts/variables" as var;
+
+/*Spacing*/
+body {
+    padding: 0 1em;
+    max-width: 60rem;
+}
+
+p, li {
+    max-width: 45ch;
+}
+
+p {
+    padding-block: 0.5em;
+}
+
+body {
+    display:grid;
+    grid-template-columns: 1.5fr;
+    gap: 1.5em;
+}
+
+
+/* Images */
+
+svg {
+    max-width: 1rem;
+}
+
+/* Colors */
+body {
+    color: var.$primary-color;
+    background: var.$bg-color;
+}
+
+
+/*Typography*/
+
+body {
+    font-family: var.$body-text-font;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-family: var.$body-text-font;
+    font-size: clamp(3rem, 1rem + 13vw, 10rem);
+    line-height: 0.9em;
+    letter-spacing: -0.3rem;
+    margin: 0;
+    padding-block-start: 3rem;
+}
+
+h2, h3, h4 {
+    font-family: var.$body-text-font;
+    line-height: 1.2em;
+}
+
+h2 {
+font-size: clamp(2.5rem, 1rem + 5vw, 2.7rem);
+max-width: 50rem;
+}
+
+h3, h4 {
+    font-size: 2rem;
+}
+
+/* Skip Link */
+.skip-link {
+  padding: 1.5em;
+ background-color: #a1b5bb;
+  color: rgb(12, 12, 12);
+}
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}

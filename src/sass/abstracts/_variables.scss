@@ -1,8 +1,8 @@
 /* variables */
 
 @use "./functions" as func;
-
-$bg-color: gold;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+$bg-color: #d3bda1;
 $bg-very-light: func.tint($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
 $bg-medium: $bg-color;
@@ -10,9 +10,12 @@ $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
 
-$primary-color: rebeccapurple;
+$primary-color: rgb(26, 25, 25);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
+
+/* Fonts */
+$body-text-font: Poppins;
